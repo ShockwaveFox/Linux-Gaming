@@ -46,7 +46,7 @@ lib32-pipewire-jack
 # Be in same directory when running the below command
 #yay -S --needed $(cat gaming-packages.txt)
 
-# verification checks
-# vulkaninfo | grep RADV
-# gamemoded -t
-# mangohud glxgears
+# verification checks - run commands separatly one at a time
+  # 1. vulkaninfo | grep RADV
+  # 2. gamemoded -t
+  # 3. mangohud glxgears
