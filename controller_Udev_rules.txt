@@ -1,6 +1,15 @@
 # Shows input devices detected
       cat /proc/bus/input/devices
 
+# Show existing devices on system
+libinput list-devices
+
+# Test in Steam - some GameSir issues are Steam config, not Linux
+      Steam → Settings → Controller
+      Disable / enable:
+            “Generic Gamepad Support”
+            “Xbox Support” (test both states)
+
 # Creates a new file in /etc/udev/rules.d named 99-gamesir-ignore-kbd.rules
 # 99 as higher number means the rules get applied after other system rules
       sudo nano /etc/udev/rules.d/99-gamesir-ignore-kbd.rules
