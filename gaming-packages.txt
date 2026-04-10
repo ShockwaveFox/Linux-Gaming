@@ -24,6 +24,8 @@ lib32-mesa
 vulkan-radeon
 lib32-vulkan-radeon
 vulkan-tools
+vulkan-icd-loader
+lib32-vulkan-icd-loader
 
 # Controllers & Steam devices
 steam-devices
@@ -53,3 +55,5 @@ lib32-pipewire-jack
         # gamemoded is running
   # 3. mangohud glxgears
         # window opens with spinning gears and MangoHud overlay appears (FPS, frame time, etc.)
+  # 4. vulkaninfo | grep -E "driverName|deviceName"
+        # Shows what driver is being used and what GPU is recognised
