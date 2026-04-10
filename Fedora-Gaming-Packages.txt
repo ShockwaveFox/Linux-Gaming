@@ -7,7 +7,9 @@ eduke32
 
 # Performance tools
 gamemode
+gamemode.i686
 mangohud
+mangohud.i686
 
 # Graphics stack (AMD, Vulkan)
 mesa-dri-drivers

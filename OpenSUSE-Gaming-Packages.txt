@@ -8,11 +8,15 @@ eduke32
 # Performance tools
 gamemode
 mangohud
+mangohud-32bit
 
 # Graphics stack (AMD, Vulkan)
 Mesa
 Mesa-vulkan-drivers
 vulkan-tools
+Mesa-vulkan-drivers-32bit
+Mesa-libGL1-32bit
+libdrm-32bit
 
 # Controllers & Steam devices
 steam-devices
