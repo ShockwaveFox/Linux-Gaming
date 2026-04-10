@@ -3,7 +3,9 @@ sudo pacman -S --needed git base-devel
 
 # Clone the git repo for yay
 git clone https://aur.archlinux.org/yay.git
+
 # Move into yay dir
 cd yay
+
 # make yay
 makepkg -si

@@ -49,11 +49,15 @@ easyeffects
 #yay -S --needed $(cat gaming-packages.txt)
 
 # verification checks - run commands separately one at a time
-  # 1. vulkaninfo | grep RADV
-        # driverName = AMD RADV
-  # 2. gamemoded -t
-        # gamemoded is running
-  # 3. mangohud glxgears
-        # window opens with spinning gears and MangoHud overlay appears (FPS, frame time, etc.)
-  # 4. vulkaninfo | grep -E "driverName|deviceName"
-        # Shows what driver is being used and what GPU is recognised
+# 1. Check Vulkan driver (RADV)
+      vulkaninfo | grep RADV
+            # Expected: driverName = AMD RADV
+# 2. Check GameMode daemon
+      gamemoded -t
+            # Expected: gamemoded is running
+# 3. Check MangoHud injection
+      mangohud glxgears
+            # Expected: spinning gears + MangoHud overlay
+# 4. Confirm GPU + driver
+      vulkaninfo | grep -E "driverName|deviceName"
+            # Expected: AMD GPU + RADV
