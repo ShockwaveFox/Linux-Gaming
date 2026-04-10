@@ -1,0 +1,28 @@
+# Core platforms
+steam
+discord
+
+# Performance tools
+gamemode
+mangohud
+
+# Graphics stack (AMD, Vulkan)
+mesa-vulkan-drivers
+vulkan-tools
+
+# Controllers & Steam devices
+steam-devices
+
+# Audio (PipeWire + effects)
+pipewire
+wireplumber
+easyeffects
+
+# Install Command
+# sudo apt install $(cat gaming-packages-debian.txt)
+
+# Flatpaks recommended for below items
+# flatpak install flathub \
+# com.heroicgameslauncher.hgl \
+# net.davidotek.pupgui2 \
+# io.github.eduke32.EDuke32

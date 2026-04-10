@@ -1,0 +1,32 @@
+# Core platforms
+steam
+discord
+heroic-games-launcher
+protonup-qt
+eduke32
+
+# Performance tools
+gamemode
+mangohud
+
+# Graphics stack (AMD, Vulkan)
+mesa-dri-drivers
+mesa-vulkan-drivers
+vulkan-tools
+
+# Controllers & Steam devices
+steam-devices
+
+# Audio (PipeWire + effects)
+pipewire
+pipewire-pulseaudio
+wireplumber
+easyeffects
+
+# Install Command
+# sudo dnf install $(cat gaming-packages-fedora.txt)
+
+# Ensure RPM fusions is set up first
+# sudo dnf install \
+# https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+# https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
