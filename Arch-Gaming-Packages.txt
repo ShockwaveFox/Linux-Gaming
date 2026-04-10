@@ -33,6 +33,7 @@ gamemode
 lib32-gamemode
 mangohud
 lib32-mangohud
+goverlay
 
 # Graphics stack (AMD, Vulkan, Proton-safe)
 mesa
