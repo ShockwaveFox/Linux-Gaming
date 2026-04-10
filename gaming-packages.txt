@@ -1,0 +1,38 @@
+# Core platforms
+steam
+discord
+heroic
+protonup-qt
+eduke32
+
+# Performance tools
+gamemode
+lib32-gamemode
+mangohud
+lib32-mangohud
+
+# Graphics stack (AMD, Vulkan, Proton-safe)
+mesa
+lib32-mesa
+vulkan-radeon
+lib32-vulkan-radeon
+vulkan-tools
+
+# Controllers & Steam devices
+steam-devices
+game-devices-udev
+
+# Audio (PipeWire)
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+
+# Optional Windows compatibility helpers
+wine-staging
+winetricks
+
+# Optional audio compatibility
+lib32-pipewire-jack
+
+#yay -S --needed $(cat gaming-packages.txt)
