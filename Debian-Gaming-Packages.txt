@@ -6,17 +6,34 @@
 steam
 discord
 
+# Firmware
+firmware-amd-graphics
+
 # Performance tools
 gamemode
 gamemode:i386
 mangohud
 mangohud:i386
+goverlay
 
 # Graphics stack (AMD, Vulkan)
 mesa-vulkan-drivers
 mesa-vulkan-drivers:i386
 libgl1-mesa-dri:i386
 vulkan-tools
+libvulkan1
+libvulkan1:i386
+libgl1-mesa-glx
+libgl1-mesa-glx:i386
+mesa-utils
+
+# Input
+libsdl2-2.0-0
+libsdl2-2.0-0:i386
+
+# EGL
+libegl1
+libegl1:i386
 
 # Controllers & Steam devices
 steam-devices
@@ -36,6 +53,17 @@ easyeffects
 # net.davidotek.pupgui2 \
 # io.github.eduke32.EDuke32
 
+# Add repos
+# sudo nano /etc/apt/sources.list.d/debian.sources
+# Types: deb
+# URIs: http://deb.debian.org/debian
+# Suites: bookworm bookworm-updates
+# Components: main contrib non-free non-free-firmware
+# Types: deb
+# URIs: http://security.debian.org/debian-security
+# Suites: bookworm-security
+# Components: main contrib non-free non-free-firmware
+
 # 1. Check Vulkan driver (RADV)
     vulkaninfo | grep RADV
         # Expected: driverName = AMD RADV
@@ -43,7 +71,8 @@ easyeffects
     gamemoded -t
         # Expected: gamemoded is running
 # 3. Check MangoHud injection
-    mangohud glxgears
+    # mangohud glxgears
+    mangohud vkcube
         # Expected: spinning gears + MangoHud overlay
 # 4. Confirm GPU + driver
     vulkaninfo | grep -E "driverName|deviceName"
