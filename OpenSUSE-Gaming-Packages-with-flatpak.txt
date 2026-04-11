@@ -1,0 +1,70 @@
+# =========================
+# System packages (zypper)
+# =========================
+
+# Core platforms
+steam
+heroic-games-launcher
+discord
+heroic
+protonup-qt
+eduke32
+
+# Firmware
+kernel-firmware-amd
+
+# Graphics stack
+Mesa
+Mesa-vulkan-drivers
+Mesa-vulkan-drivers-32bit
+Mesa-libGL1-32bit
+Mesa-libEGL1-32bit
+libdrm-32bit
+vulkan-tools
+libvulkan1
+libvulkan1-32bit
+
+# Input
+libSDL2-2_0-0
+libSDL2-2_0-0-32bit
+
+# Performance
+gamemode
+mangohud
+mangohud-32bit
+goverlay
+
+# Controllers
+steam-devices
+
+# Audio
+pipewire
+pipewire-pulseaudio
+wireplumber
+alsa-utils
+easyeffects
+
+# Optional
+# gamescope
+
+# =========================
+# Install commands
+# =========================
+
+# sudo zypper install $(cat gaming-packages-opensuse.txt)
+
+# =========================
+# Flatpak apps
+# =========================
+
+# flatpak install flathub \
+# com.heroicgameslauncher.hgl \
+# net.davidotek.pupgui2 \
+# com.eduke32.EDuke32
+
+
+# =========================
+# Install commands
+# =========================
+
+# flatpak install flathub $(cat flatpak-packages.txt)

@@ -1,0 +1,86 @@
+# =========================
+# System packages (pacman)
+# =========================
+
+# Kernels
+linux-zen
+linux-zen-headers
+linux-lts
+linux-lts-headers
+
+# Core platforms
+steam
+discord
+heroic
+protonup-qt
+eduke32
+
+# Firmware
+linux-firmware
+
+# Graphics stack (AMD, Vulkan)
+mesa
+lib32-mesa
+vulkan-radeon
+lib32-vulkan-radeon
+vulkan-tools
+vulkan-icd-loader
+lib32-vulkan-icd-loader
+
+# Vulkan extras
+vulkan-validation-layers
+lib32-vulkan-validation-layers
+vulkan-mesa-layers
+lib32-vulkan-mesa-layers
+
+# Input
+sdl2
+lib32-sdl2
+
+# Performance
+gamemode
+lib32-gamemode
+mangohud
+lib32-mangohud
+goverlay
+
+# Optional
+# gamescope
+
+# Controllers
+steam-devices
+game-devices-udev
+
+# Audio
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+alsa-utils
+easyeffects
+
+# Optional
+# wine-staging
+# winetricks
+
+# =========================
+# Install commands
+# =========================
+
+# sudo pacman -Syu $(cat gaming-packages-arch.txt)
+
+# =========================
+# Flatpak apps
+# =========================
+
+# flatpak install flathub \
+# com.heroicgameslauncher.hgl \
+# net.davidotek.pupgui2 \
+# com.eduke32.EDuke32
+
+
+# =========================
+# Install commands
+# =========================
+
+# flatpak install flathub $(cat flatpak-packages.txt)

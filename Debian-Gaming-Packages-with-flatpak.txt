@@ -1,0 +1,71 @@
+# =========================
+# System packages (apt)
+# =========================
+
+# Core platforms
+steam
+discord
+
+# Firmware
+firmware-amd-graphics
+
+# Graphics stack
+mesa-vulkan-drivers
+mesa-vulkan-drivers:i386
+libgl1-mesa-dri:i386
+vulkan-tools
+libvulkan1
+libvulkan1:i386
+libgl1-mesa-glx
+libgl1-mesa-glx:i386
+mesa-utils
+
+# Input
+libsdl2-2.0-0
+libsdl2-2.0-0:i386
+
+# EGL
+libegl1
+libegl1:i386
+
+# Performance
+gamemode
+gamemode:i386
+mangohud
+mangohud:i386
+goverlay
+
+# Controllers
+steam-devices
+
+# Audio
+pipewire
+pipewire-pulse
+wireplumber
+easyeffects
+
+# Optional
+# wine
+# winetricks
+
+# =========================
+# Install commands
+# =========================
+
+# sudo apt install $(cat gaming-packages-debian.txt)
+
+# =========================
+# Flatpak apps
+# =========================
+
+# flatpak install flathub \
+# com.heroicgameslauncher.hgl \
+# net.davidotek.pupgui2 \
+# com.eduke32.EDuke32
+
+
+# =========================
+# Install commands
+# =========================
+
+# flatpak install flathub $(cat flatpak-packages.txt)
