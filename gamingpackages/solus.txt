@@ -1,0 +1,22 @@
+steam
+discord
+heroic
+gamemode
+gamemode-32bit
+mangohud
+mangohud-32bit
+goverlay
+mesa
+mesa-32bit
+vulkan
+vulkan-32bit
+steam-devices
+sdl2
+sdl2-32bit
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+alsa-utils
+
+xargs -a gaming-packages-solus.txt sudo eopkg install -y

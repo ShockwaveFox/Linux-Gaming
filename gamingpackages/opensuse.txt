@@ -1,0 +1,27 @@
+steam
+steam-devices
+heroic-games-launcher
+discord
+gamemode
+libgamemode0-32bit
+mangohud
+mangohud-32bit
+goverlay
+gamescope
+Mesa-dri
+Mesa-dri-32bit
+Mesa-vulkan-drivers
+Mesa-vulkan-drivers-32bit
+libvulkan1
+libvulkan1-32bit
+vulkan-tools
+kernel-firmware-amdgpu
+pipewire
+pipewire-pulseaudio
+wireplumber
+alsa-utils
+eduke32
+vkBasalt
+vkBasalt-32bit
+
+xargs -a opensuse.txt sudo zypper install -y

@@ -53,7 +53,8 @@ Avoid:
     3. Expander (reduces background noise when you are not speaking)
     4. Compressor
     5. Limiter
-    6. (Optional) Equalizer
+    6. (Optional) clear
+    Equalizer
 
 - You can toggle effects on/off individually.
 
